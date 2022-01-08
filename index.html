@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Weather Api</title>
+</head>
+<body class="view" style="background-image: url(./images/pexels-jeremy-müller-10699210.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center">
+
+
+
+    <div class="container-fluid max-height">
+        <div class="row">
+            <div class="col-lg-12 bg-dark text-white py-4 display-4">WEATHER app</div>
+            <div id="input-container" class="col-lg-12 bg- text-center"><input id="input-bar" placeholder="search city" class="text-center m-2 w-25" type="text"><input id="submit-button" class="btn btn-dark" type="button" value="submit"></div>
+            <div class="col-lg-12 text-center"><button id="units-button" class="btn btn-dark">&#176;<span id="unit-text">F</span></button></div>
+        </div>
+
+    
+
+        <div class="row bg w-75 mx-auto mt-5 text-white">
+            <div class="col-lg-12">
+                <h1 id="city" class="text-center border-bottom border-white">chicago</h1>
+                <h1 id="clouds" class="text-center">placeholder</h1>
+                <h1>Temperature:  <span class="d-inline-block"><h2 id="temperature">39</h2></span>&#176;</h1>
+                <h1>Feels Like:  <span class="d-inline-block"><h2 id="real-feel">30</h2></span>&#176;</h1>
+                <h1>Humidity:  <span class="d-inline-block"><h2 id="humidity" >100%</h2></span></h1>
+                <h1>Wind: <span class="d-inline-block"><h2 id="wind" >33</h2></span> mph</h1>
+            </div>
+        </div>
+
+
+        
+
+    
+
+
+
+
+
+
+
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
