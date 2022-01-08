@@ -42,7 +42,7 @@ async function getWeather() {
     } else {
         units = '';
     }
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputBar.val()}&appid=0305ee94777d74864f050e119f7de47a&units=${units}`, {mode: 'cors'})
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputBar.val()}&appid=0305ee94777d74864f050e119f7de47a&units=${units}`, {mode: 'cors'})
     const returnedWeather = await response.json();
     city.text(returnedWeather.name);
      clouds.text(returnedWeather.weather[0].description);
